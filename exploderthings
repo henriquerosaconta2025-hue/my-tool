@@ -1,0 +1,18 @@
+{
+  name: "ToolBomb",
+  color: "#FF00FF",
+  category: "tools",         // Faz com que apareça na toolbar
+  tool: true,                 // Marca que é uma ferramenta
+  behavior: [
+    "XXX",
+    "XEX",
+    "XXX"
+  ],
+  properties: {
+    explode: 8               // Define o raio da explosão; você pode alterar esse valor
+  },
+  onClick: function(x, y) {
+    // Quando o usuário clicar com a ferramenta, dispara uma explosão no pixel (x, y)
+    this.explodeAt(x, y);
+  }
+}
